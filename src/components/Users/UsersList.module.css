@@ -1,0 +1,30 @@
+.users {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.users ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.users li {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+.users li.removeAnimation {
+  animation: LI 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes LI {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(100px);
+  }
+}
